@@ -12,3 +12,15 @@
     <script src="/FIT3179 - Data Visualisation/FIT3179 Visualisation 2/FIT3179_Homework3.js"></script>
     <title> Global CO2 Emissions </title>
 </head>    
+
+<body>
+<h1>FIT3179 Week 10 Homework</h1>
+<div id="CO2_emissions_vis"></div>
+<div id="renewable_energy_vis"></div>
+<script>
+var vg_1 = "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/viz/CO2_Emissions.json";
+vegaEmbed ("#CO2_emissions_vis", vg_1).then(function(result) {
+}) - catch (console.error);
+var vg_2 = "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/viz/visualization.vl.json";
+vegaEmbed ("#renewable_energy_vis", vg_2). then (function(result) {
+}).catch(console.error);
