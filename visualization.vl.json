@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Renewable Energy Production",
+  "width": 800,
+  "height": 400,
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/Renewable_Power.csv"
+      },
+      "mark": "area",
+      "selection": {
+        "energy_highlight": {
+          "type": "multi",
+          "fields": ["Energy"],
+          "bind": "legend"
+        }
+      },
+      "encoding": {
+        "x": {
+          "timeUnit": "year",
+          "field": "Year",
+          "type": "temporal",
+          "axis": {"domain": false, "format": "%Y", "tickSize": 0},
+          "title": "Year"
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "Value",
+          "type": "quantitative",
+          "title": "Energy Production (TWh)"
+        },
+        "color": {"field": "Energy", "type": "nominal"},
+        "tooltip": [
+          {"timeUnit": "year", "field": "Year", "title": "Year"},
+          {
+            "field": "Value",
+            "title": "Energy Production (TWh)",
+            "type": "quantitative",
+            "format": ".2f"
+          },
+          {"field": "Energy", "title": "Energy Type"}
+        ],
+        "opacity": {
+          "condition": {"selection": "energy_highlight", "value": 0.75},
+          "value": 0.25
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/Renewable_Power.csv"
+      },
+      "mark": {"type": "text", "align": "center", "baseline": "middle"},
+      "encoding": {
+        "x": {"timeUnit": "year", "field": "Year", "type": "temporal"},
+        "y": {"aggregate": "sum", "field": "Value", "type": "quantitative"},
+        "text": {"field": "Year", "timeUnit": "year"},
+        "opacity": {"value": 1},
+        "condition": {
+          "test": "datum['Year'] == '2011' || datum['Year'] == '2013' ",
+          "value": 1
+        },
+        "value": 0
+      }
+    }
+  ],
+  "config": {}
+}
