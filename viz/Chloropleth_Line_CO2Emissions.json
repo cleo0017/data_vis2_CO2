@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "vconcat": [
     {
-      "width": "container",
+      "width": 500,
       "height": 400,
       "title": "Global CO₂ Emissions 1980 - 2019",
       "projection": {"type": "equalEarth"},
@@ -83,7 +83,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/CO2_All_Energy_tWH.csv"
       },
-      "width": "container",
+      "width": 500,
       "title": "Use this line chart to filter out the data based on time",
       "transform": [
         {
