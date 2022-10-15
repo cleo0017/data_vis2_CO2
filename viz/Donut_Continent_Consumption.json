@@ -16,58 +16,35 @@
       }
     }
   ],
-  "layer": [
-    {
+  "layer": [{
       "data": {
-        "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/Percent_Continent_Power_Consumption.csv"
-      },
-      "encoding": {
-        "theta": {
-          "field": "Power Consumption",
-          "type": "quantitative",
-          "stack": true
-        },
-        "color": {
-          "field": "Continent",
-          "type": "nominal",
-          "scale": {
-            "range": [
-              "#82cfff",
-              "#9f1853",
-              "#a57c1b",
-              "#786028",
-              "#005d5d",
-              "#08bdba",
-              "#8a3800",
-              "#198038",
-              "#002d9c",
-              "#a56eff"
+    "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/Percent_Continent_Power_Consumption.csv"
+  },
+    "encoding": {
+    "theta": {"field": "Power Consumption", "type": "quantitative", "stack": true},
+    "color": {"field": "Continent", "type": "nominal", "scale": {"range": ["#82cfff", "#9f1853", "#a57c1b", "#786028", "#005d5d", "#08bdba", "#8a3800", "#198038", "#002d9c", "#a56eff"]}},
+    "tooltip": [
+              {"field": "Continent", "title": "Continent"},
+              {
+                "field": "Power Consumption",
+                "title": "Power Consumption",
+                "type": "quantitative",
+                "format": ".2f"
+              },
+              {"field": "Year", "title": "Year"}
             ]
-          }
-        }
-      },
-      "transform": [{"filter": "datum.Year == Year_selection"}],
-      "layer": [
-        {
-          "mark": {
-            "type": "arc",
-            "outerRadius": 150,
-            "innerRadius": 100,
-            "stroke": "#fff"
-          }
-        },
-        {
-          "mark": {"type": "text", "radius": 175, "angle": 335},
-          "encoding": {
-            "text": {
-              "field": "Power Consumption",
-              "type": "nominal",
-              "format": ".2f"
-            }
-          }
-        }
-      ]
+  },
+  "transform": [
+  {"filter": "datum.Year == Year_selection"}],
+  "layer": [{
+    "mark": {"type": "arc", "outerRadius": 150, "innerRadius": 100, "stroke": "#fff" }
+  },{
+    "mark": {"type": "text", "radius" : 175, "angle": 335},
+    "encoding": {
+      "text": {"field": "Power Consumption", "type": "nominal", "format": ".2f"}
     }
-  ],
-  "config": {}
+  }]
+
+}
+]
 }
