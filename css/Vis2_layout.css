@@ -5,10 +5,11 @@ body {
     ;
     font-family: 'Open Sans', sans-serif;
 }
-
-.pure-u-1 img {
-    width: 100vw;
+.title img {
+    width: 50vw;
 }
+
+
 
 .page {
     width: 1075px;
