@@ -2,106 +2,104 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": "container",
   "height": 400,
-  "hconcat": [
+  "hconcat": [{
+  "layer": [
     {
-      "layer": [
-        {
-          "data": {
-            "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/Nonrewable_energy.csv"
-          },
-          "mark": "area",
-          "selection": {
-            "energy_highlight": {
-              "type": "multi",
-              "fields": ["Energy Type"],
-              "bind": "legend"
-            }
-          },
-          "title": "Non Renewable Energy Production",
-          "encoding": {
-            "x": {
-              "timeUnit": "year",
-              "field": "Year",
-              "type": "temporal",
-              "axis": {"domain": false, "format": "%Y", "tickSize": 0},
-              "title": "Year"
-            },
-            "y": {
-              "aggregate": "sum",
-              "field": "Energy_production",
-              "type": "quantitative",
-              "title": "Energy Production (TWh)"
-            },
-            "color": {"field": "Energy Type", "type": "nominal"},
-            "tooltip": [
-              {"timeUnit": "year", "field": "Year", "title": "Year"},
-              {
-                "field": "Energy_production",
-                "title": "Energy Production (TWh)",
-                "type": "quantitative",
-                "format": ".2f"
-              },
-              {"field": "Energy Type", "title": "Energy Type"}
-            ],
-            "opacity": {
-              "condition": {"selection": "energy_highlight", "value": 0.75},
-              "value": 0.25
-            }
-          }
+      "data": {
+        "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/Nonrewable_energy.csv"
+      },
+      "mark": "area",
+      "selection": {
+        "energy_type_highlight": {
+          "type": "multi",
+          "fields": ["Energy Type"],
+          "bind": "legend"
         }
-      ],
-      "config": {}
-    },
-    {
-      "layer": [
-        {
-          "data": {
-            "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/Renewable_Power.csv"
+      },
+      "title": "Non Renewable Energy Production",
+      "encoding": {
+        "x": {
+          "timeUnit": "year",
+          "field": "Year",
+          "type": "temporal",
+          "axis": {"domain": false, "format": "%Y", "tickSize": 0},
+          "title": "Year"
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "Energy_production",
+          "type": "quantitative",
+          "title": "Energy Production (TWh)"
+        },
+        "color": {"field": "Energy Type", "type": "nominal"},
+        "tooltip": [
+          {"timeUnit": "year", "field": "Year", "title": "Year"},
+          {
+            "field": "Energy_production",
+            "title": "Energy Production (TWh)",
+            "type": "quantitative",
+            "format": ".2f"
           },
-          "mark": "area",
-          "selection": {
-            "energy_highlight": {
-              "type": "multi",
-              "fields": ["Energy"],
-              "bind": "legend"
-            }
-          },
-          "title": "Renewable Energy Production",
-          "encoding": {
-            "x": {
-              "timeUnit": "year",
-              "field": "Year",
-              "type": "temporal",
-              "axis": {"domain": false, "format": "%Y", "tickSize": 0},
-              "title": "Year"
-            },
-            "y": {
-              "aggregate": "sum",
-              "field": "Value",
-              "type": "quantitative",
-              "scale": {"domain": [0, 350000]},
-              "title": "Energy Production (TWh)"
-            },
-            "color": {"field": "Energy", "type": "nominal"},
-            "tooltip": [
-              {"timeUnit": "year", "field": "Year", "title": "Year"},
-              {
-                "field": "Value",
-                "title": "Energy Production (TWh)",
-                "type": "quantitative",
-                "format": ".2f"
-              },
-              {"field": "Energy", "title": "Energy Type"}
-            ],
-            "opacity": {
-              "condition": {"selection": "energy_highlight", "value": 0.75},
-              "value": 0.25
-            }
-          }
+          {"field": "Energy Type", "title": "Energy Type"}
+        ],
+        "opacity": {
+          "condition": {"selection": "energy_type_highlight", "value": 0.75},
+          "value": 0.25
         }
-      ],
-      "config": {}
+      }
     }
   ],
   "config": {}
+},
+{
+"layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/Renewable_Power.csv"
+      },
+      "mark": "area",
+      "selection": {
+        "energy_highlight": {
+          "type": "multi",
+          "fields": ["Energy Type"],
+          "bind": "legend"
+        }
+      },
+      "title": "Renewable Energy Production",
+      "encoding": {
+        "x": {
+          "timeUnit": "year",
+          "field": "Year",
+          "type": "temporal",
+          "axis": {"domain": false, "format": "%Y", "tickSize": 0},
+          "title": "Year"
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {"domain": [0, 160000]},
+          "title": "Energy Production (TWh)"
+        },
+        "color": {"field": "Energy Type", "type": "nominal"},
+        "tooltip": [
+          {"timeUnit": "year", "field": "Year", "title": "Year"},
+          {
+            "field": "Value",
+            "title": "Energy Production (TWh)",
+            "type": "quantitative",
+            "format": ".2f"
+          },
+          {"field": "Energy Type", "title": "Energy Type"}
+        ],
+        "opacity": {
+          "condition": {"selection": "energy_highlight", "value": 0.75},
+          "value": 0.25
+        }
+      }
+    }
+  ],
+  "config": {}
+
 }
+]}
