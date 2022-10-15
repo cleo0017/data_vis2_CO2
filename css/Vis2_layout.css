@@ -1,7 +1,7 @@
 html,
 body {
     background-color: 
-    #daf7d0
+    #0a0a0a
     ;
     font-family: 'Open Sans', sans-serif;
 }
@@ -12,6 +12,7 @@ body {
 
 .page {
     width: 1075px;
+    background-color: #daf7d0;
     margin-left: 160px;
     margin-right: 160px;
     margin-top: 20px;
