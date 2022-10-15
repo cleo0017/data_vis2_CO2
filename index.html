@@ -20,7 +20,7 @@
 <h3>How about to scale?</h2>
 <div id="Energy_6000_vis"></div>
 <h1>How much Energy is Consumed?</h2>
-<div id="Radial_Continent_Consumption_vis"></div>
+<div id="Donut_Continent_Consumption_vis"></div>
 <h1>Energy Consumption</h2>
 <div id="Continent_Consumption_vis"></div>
 
@@ -38,11 +38,11 @@ var vg_3 = "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/viz/En
 vegaEmbed("#Energy_6000_vis", vg_3).then(function(result) {
 }).catch(console.error);
     
-var vg_4 = "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/viz/Radial_Chart.json";
-vegaEmbed("#Radial_Continent_Consumption_vis", vg_4).then(function(result) {
+var vg_4 = "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/viz/Donut_Continent_Consumption.json";
+vegaEmbed("#Donut_Continent_Consumption_vis", vg_4).then(function(result) {
 }).catch(console.error);
     
-var vg_5 = "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/viz/Continent%20Power%20Consumption.json";
+var vg_5 = "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/viz/Stacked_Bar_Continent_consumption.json";
 vegaEmbed("#Continent_Consumption_vis", vg_5).then(function(result) {
 }).catch(console.error);
     
