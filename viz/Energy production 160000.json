@@ -1,11 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-   "spec" :{
-   "width": "container",
-   "height" : "container"},
   "hconcat": [{
   "layer": [
     {
+      "height": 400,
+      "width":500,
       "data": {
         "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/Nonrewable_energy.csv"
       },
@@ -55,6 +54,8 @@
 {
 "layer": [
     {
+      "height": 400,
+      "width":500,
       "data": {
         "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/Renewable_Power.csv"
       },
