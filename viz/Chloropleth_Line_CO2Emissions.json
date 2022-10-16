@@ -58,7 +58,7 @@
             "shape": {"field": "country", "type": "geojson"},
             "color": {
               "field": "CO2_Pop",
-              "title": "CO₂ Emissions per 100,000",
+              "title": ["CO₂ Emissions per", "100,000 people"],
               "type": "quantitative",
               "scale": {
                 "type": "threshold",
