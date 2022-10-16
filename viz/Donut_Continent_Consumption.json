@@ -24,7 +24,7 @@
     "theta": {"field": "Power Consumption", "type": "quantitative", "stack": true},
     "color": {"field": "Continent", "type": "nominal", "scale": {"range": ["#82cfff", "#9f1853", "#a57c1b", "#786028", "#005d5d", "#08bdba", "#8a3800", "#198038", "#002d9c", "#a56eff"]}},
     "tooltip": [
-              {"field": "Continent", "title": "Organisation"},
+              {"field": "Continent", "title": "Global Organisation"},
               {
                 "field": "Power Consumption",
                 "title": "Power Consumption",
