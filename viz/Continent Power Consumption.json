@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Continent Power Consumption",
+  "title": "Global Power Consumption",
   "width": 500,
   "height": 500,
   "layer": [
@@ -23,7 +23,7 @@
           "axis": {"grid": false}
         },
         "color": {"field": "Continent", "type": "nominal", "legend": null},
-        "row": {"field": "Continent", "type": "nominal", "title": "Continent"}
+        "row": {"field": "Continent", "type": "nominal", "title": "Global Organisation"}
       }
     }
   ],
