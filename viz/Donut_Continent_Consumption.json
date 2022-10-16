@@ -34,6 +34,7 @@
               {"field": "Year", "title": "Year"}
             ]
   },
+   "legend" : {"title": "Global Organisation"},
   "transform": [
   {"filter": "datum.Year == Year_selection"}],
   "layer": [{
