@@ -4,7 +4,7 @@
   "layer": [
     {
       "height": 400,
-      "width": "container",
+      "width": 500,
       "data": {
         "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/Nonrewable_energy.csv"
       },
@@ -22,7 +22,7 @@
           "timeUnit": "year",
           "field": "Year",
           "type": "temporal",
-          "axis": {"domain": false, "format": "%Y", "tickSize": 0},
+          "axis": {"domain": false, "format": "%Y", "tickSize": 0, "grid": false},
           "title": "Year"
         },
         "y": {
@@ -43,7 +43,7 @@
           {"field": "Energy Type", "title": "Energy Type"}
         ],
         "opacity": {
-          "condition": {"selection": "energy_type_highlight", "value": 0.75},
+          "condition": {"selection": "energy_type_highlight", "value": 1},
           "value": 0.25
         }
       }
@@ -55,7 +55,7 @@
 "layer": [
     {
       "height": 400,
-      "width": "container",
+      "width": 500,
       "data": {
         "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/Renewable_Power.csv"
       },
@@ -73,7 +73,7 @@
           "timeUnit": "year",
           "field": "Year",
           "type": "temporal",
-          "axis": {"domain": false, "format": "%Y", "tickSize": 0},
+          "axis": {"domain": false, "format": "%Y", "tickSize": 0, "grid": false},
           "title": "Year"
         },
         "y": {
@@ -95,7 +95,7 @@
           {"field": "Energy Type", "title": "Energy Type"}
         ],
         "opacity": {
-          "condition": {"selection": "energy_highlight", "value": 0.75},
+          "condition": {"selection": "energy_highlight", "value": 1},
           "value": 0.25
         }
       }
