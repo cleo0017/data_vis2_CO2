@@ -39,7 +39,7 @@
   "layer": [{
     "mark": {"type": "arc", "outerRadius": 150, "innerRadius": 100, "stroke": "#fff" }
   },{
-    "mark": {"type": "text", "radius" : 175, "angle": 335},
+    "mark": {"type": "text", "radius" : 175, "size" : 9},
     "encoding": {
       "text": {"field": "Power Consumption", "type": "nominal", "format": ".2f"}
     }
