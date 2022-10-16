@@ -4,7 +4,7 @@
   "layer": [
     {
       "height": 400,
-      "width":400,
+      "width":300,
       "data": {
         "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/Nonrewable_energy.csv"
       },
@@ -55,7 +55,7 @@
 "layer": [
     {
       "height": 400,
-      "width":400,
+      "width":300,
       "data": {
         "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/Renewable_Power.csv"
       },
