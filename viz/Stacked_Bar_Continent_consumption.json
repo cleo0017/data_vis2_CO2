@@ -32,5 +32,6 @@
                 "format": ".2f"
               }
             ]
-}
+},
+  "config": {  "title": {"font": "sans-serif", "fontSize" : 25}}
 }
