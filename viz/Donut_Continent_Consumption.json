@@ -47,5 +47,10 @@
 
 }
 ],
-  "config": {  "title": {"font": "sans-serif", "fontSize" : 25}}
+  "config": {
+  "view": {
+     "stroke": "transparent"
+  },
+  "title": {"font": "sans-serif"}
+}
 }
