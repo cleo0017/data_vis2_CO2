@@ -3,7 +3,7 @@
   "hconcat": [{
   "layer": [
     {
-       "width": "container",
+      "width": "container",
       "height": 400,
       "data": {
         "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/Nonrewable_energy.csv"
@@ -83,7 +83,7 @@
           "scale": {"domain": [0, 6000]},
           "title": "Energy Production (TWh)"
         },
-        "color": {"field": "Energy Type", "type": "nominal"},
+        "color": {"field": "Energy Type", "type": "nominal", "scale": {"range": ["#37b860", "#3d403d", "#f59d11", "#5ddae3", "#cad6eb", "#f1a3f7", "#5e4219", "#e8cf41"]}},
         "tooltip": [
           {"timeUnit": "year", "field": "Year", "title": "Year"},
           {
@@ -100,8 +100,8 @@
         }
       }
     }
-  ],
-  "config": {}
+  ]
 
 }
-]}
+],
+"config": {  "title": {"font": "sans-serif", "fontSize" : 25}}}
