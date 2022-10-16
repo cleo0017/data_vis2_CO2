@@ -23,7 +23,8 @@
           "axis": {"grid": false}
         },
         "color": {"field": "Continent", "type": "nominal", "legend": null},
-        "row": {"field": "Continent", "type": "nominal", "title": "Global Organisation"}
+        "row": {"field": "Continent", "type": "nominal", "title": "Global Organisation"},
+         "legend" : {"title": "Global Organisation"},
       }
     }
   ],
