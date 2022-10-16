@@ -9,7 +9,17 @@ body {
     width: 1200px;
 }
 
+.heading{
+    font-size: 40px;
+}
 
+.subheading{
+    font-size: 30px;
+}
+
+.text{
+    font-size: 25px;
+}
 
 .page {
     width: 1200px;
@@ -22,18 +32,37 @@ body {
 }
 
 .container-right {
-    padding-left: 20px;
     padding-right: 30px;
 }
 
 .container-left {
-    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .pure-g {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+}
+
+#Donut_Continent_Consumption_vis{
+    width: 600px;
+
+}
+
+#Continent_Consumption_vis{
+    width: 600px;
+}
+
+#CO2_emissions_vis{
+    width: 1000px;
+    padding-left: 38px;
 }
 
 #Energy_160000_vis {
-    width: 1000px;
+    width: 1200px;
+    padding-left: 38px;
+}
+
+#Energy_6000_vis {
+    width: 1200px;
+    padding-left: 38px;
 }
