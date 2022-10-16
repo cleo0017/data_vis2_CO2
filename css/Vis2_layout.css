@@ -6,7 +6,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 .title img {
-    width: 70vw;
+    width: 1200px;
 }
 
 
@@ -19,7 +19,6 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
-    padding-top: 35px;
 }
 
 .container-right {
@@ -33,4 +32,8 @@ body {
 
 .pure-g {
     margin-bottom: 60px;
+}
+
+#Energy_160000_vis {
+    width: 1000px;
 }
