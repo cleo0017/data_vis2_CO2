@@ -4,7 +4,7 @@
     {
       "width": "container",
       "height": 400,
-      "title": "Global CO₂ Emissions 1980 - 2019",
+      "title": {"text":"Global CO₂ Emissions 1980 - 2019", "fontSize" : 25},
       "projection": {"type": "equalEarth"},
       "layer": [
         {
@@ -84,7 +84,7 @@
         "url": "https://raw.githubusercontent.com/cleo0017/data_vis2_CO2/main/data/CO2_All_Energy_tWH.csv"
       },
       "width": "container",
-      "title": "Use this line chart to filter out the data based on time",
+      "title": {"text" : "Use this line chart to filter out the data based on time", "fontSize": 17},
       "transform": [
         {
           "bin": {"step": 200, "extent": [0, 800]},
@@ -114,5 +114,10 @@
       }
     }
   ],
-  "config": {"title": {"font": "sans-serif", "fontSize": 16}}
+  "config": {
+  "view": {
+     "stroke": "transparent"
+  },
+  "title": {"font": "sans-serif"}
+}
 }
