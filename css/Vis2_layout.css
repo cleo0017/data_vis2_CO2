@@ -13,15 +13,26 @@ body {
 .heading{
     font-size: 60px;
     font-family: 'Kaushan Script', cursive;
+    background-color: rgb(175, 238, 166);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .subheading{
+    font-size: 45px;
     font-family: 'Kaushan Script', cursive;
-    font-size: 50px;
+    background-color: rgb(210, 241, 206);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .text{
     font-size: 25px;
+    text-align: justify;
 }
 
 .page {
@@ -31,15 +42,18 @@ body {
     margin-right: 160px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .container-right {
-    padding-right: 30px;
+    padding-right: 10px;
+    padding-left: 20px;
 }
 
 .container-left {
-    padding-left: 30px;
+    padding-left: 10px;
+    padding-right: 20px;
+    
 }
 
 .pure-g {
@@ -61,10 +75,12 @@ body {
 
 #Energy_160000_vis {
     width: 1200px;
+    padding-left: 10px;
 
 }
 
 #Energy_6000_vis {
     width: 1200px;
+    padding-left: 10px;
 
 }
