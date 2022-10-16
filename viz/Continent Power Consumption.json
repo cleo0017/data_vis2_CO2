@@ -24,7 +24,7 @@
         },
         "color": {"field": "Continent", "type": "nominal", "legend": null},
         "row": {"field": "Continent", "type": "nominal", "title": "Continent/Global Organisation"},
-         "legend" : {"title": "Continent/Organisation"},
+        "legend" : {"title": "Continent/Organisation"},
       }
     }
   ],
