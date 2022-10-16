@@ -11,14 +11,13 @@ body {
 
 
 .heading{
-    font-size: 70px;
-    font-family: 'Alex Brush', cursive;
-    color: #20600a;
+    font-size: 60px;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .subheading{
-    font-family: 'Alex Brush', cursive;
-    font-size: 60px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
 }
 
 .text{
@@ -27,7 +26,7 @@ body {
 
 .page {
     width: 1200px;
-    background-color: #daf7d0;
+    background-color: #ffffff;
     margin-left: 160px;
     margin-right: 160px;
     margin-top: 20px;
@@ -63,10 +62,10 @@ body {
 
 #Energy_160000_vis {
     width: 1200px;
-    padding-left: 38px;
+
 }
 
 #Energy_6000_vis {
-    width: 1200px;
-    padding-left: 38px;
+    width: 1000px;
+
 }
