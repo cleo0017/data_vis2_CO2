@@ -1,7 +1,7 @@
 html,
 body {
     background-color: 
-    #0a0a0a
+    #093400
     ;
     font-family: 'Open Sans', sans-serif;
 }
@@ -21,13 +21,11 @@ body {
 }
 
 .subheading{
-    font-size: 45px;
+    font-size: 35px;
     font-family: 'Kaushan Script', cursive;
-    background-color: rgb(210, 241, 206);
     padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .text{
@@ -40,37 +38,43 @@ body {
     background-color: #ffffff;
     margin-left: 160px;
     margin-right: 160px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .container-right {
     padding-right: 10px;
-    padding-left: 20px;
+    padding-left: 50x;
 }
 
 .container-left {
     padding-left: 10px;
-    padding-right: 20px;
+    padding-right: 50px;
     
 }
 
-.pure-g {
-    margin-bottom: 30px;
-}
+
 
 #Donut_Continent_Consumption_vis{
     width: 600px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
 #Continent_Consumption_vis{
     width: 600px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #CO2_emissions_vis{
     width: 1000px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 #Energy_160000_vis {
@@ -83,4 +87,10 @@ body {
     width: 1200px;
     padding-left: 10px;
 
+}
+
+.green_world img {
+    width: 500px;
+    height: 500px;
+    padding-left: 60px;
 }
