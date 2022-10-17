@@ -52,6 +52,6 @@
   "view": {
      "stroke": "transparent"
   },
-  "title": {"font": "sans-serif"}
+  "title": {"font": "sans-serif", "fontSize": 25}
 }
 }
