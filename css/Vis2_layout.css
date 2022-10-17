@@ -66,9 +66,10 @@ body {
 }
 
 #Continent_Consumption_vis{
-    width: 600px;
+    width: 550px;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right: 20px;
 }
 
 #CO2_emissions_vis{
