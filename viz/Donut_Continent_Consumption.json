@@ -27,7 +27,7 @@
               {"field": "Continent", "title": "Continent/Organisation"},
               {
                 "field": "Power Consumption",
-                "title": "Power Consumption (TWh)",
+                "title": "% Power Consumption",
                 "type": "quantitative",
                 "format": ".2f"
               },
