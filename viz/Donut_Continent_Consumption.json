@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Percentage Global Power Consumption",
   "width": 450,
   "height": 400,
   "params": [
@@ -50,6 +51,7 @@
   "config": {
   "view": {
      "stroke": "transparent"
-  }
+  },
+"title": {"font": "sans-serif", "fontSize" : 25}
 }
 }
