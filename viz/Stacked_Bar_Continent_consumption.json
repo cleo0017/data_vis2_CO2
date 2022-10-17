@@ -25,7 +25,7 @@
       "title": "Continent/Organisation"},
       "tooltip": [
               {"timeUnit": "year", "field": "Year", "title": "Year"},
-              {"field": "Continent", "title": "Continent/Organisation"},
+              {"field": "Continent", "title": "[Continent/ , Organisation]"},
               {
                 "field": "Power Consumption",
                 "title": "Power Consumption",
