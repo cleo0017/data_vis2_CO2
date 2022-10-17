@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Global Power Consumption",
   "width": 450,
   "height": 400,
   "params": [
@@ -28,7 +27,7 @@
               {"field": "Continent", "title": "Continent/Organisation"},
               {
                 "field": "Power Consumption",
-                "title": "Power Consumption",
+                "title": "Power Consumption (TWh)",
                 "type": "quantitative",
                 "format": ".2f"
               },
@@ -51,7 +50,6 @@
   "config": {
   "view": {
      "stroke": "transparent"
-  },
-  "title": {"font": "sans-serif", "fontSize": 25}
+  }
 }
 }
