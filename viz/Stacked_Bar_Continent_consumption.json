@@ -17,7 +17,8 @@
     "y": {
       "field": "Power Consumption",
       "aggregate": "sum",
-      "type": "quantitative"
+      "type": "quantitative",
+      "title": "Power Consumption (TWh)"
     },
     "color": {
       "field": "Continent",
@@ -28,7 +29,7 @@
               {"field": "Continent", "title": "Continent/Organisation"},
               {
                 "field": "Power Consumption",
-                "title": "Power Consumption",
+                "title": "Power Consumption (TWh)",
                 "type": "quantitative",
                 "format": ".2f"
               }
