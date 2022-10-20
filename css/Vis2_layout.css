@@ -36,13 +36,14 @@ body {
 .page {
     width: 1200px;
     background-color: #ffffff;
-    margin-left: 160px;
-    margin-right: 160px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-top: 30px;
     padding-right: 30px;
     padding-left: 30px;
+    padding-bottom: 30px;
 }
 
 .container-right {
@@ -79,13 +80,13 @@ body {
 }
 
 #Energy_160000_vis {
-    width: 1200px;
+    width: 1000px;
     padding-left: 10px;
 
 }
 
 #Energy_6000_vis {
-    width: 1200px;
+    width: 1000px;
     padding-left: 10px;
 
 }
